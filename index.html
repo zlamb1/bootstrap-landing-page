@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Connections | Waukesha County Technical College</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css"> 
+</head>
+<body>
+  <header class="fixed-top d-flex flex-column align-items-center border-bottom border-3 border-primary">
+    <div class="container-fluid collapse p-0 bg-dark" id="div-searchbar">
+      <input class="text-dark w-100 shadow-none border-0 m-0 py-3" id="input-searchbar" placeholder="Search">
+    </div>
+  <nav class="nav navbar navbar-expand-md flex-column p-0">
+    <div class="container-fluid d-flex justify-content-center bg-primary">
+      <div class="content-width w-100 flex-grow-0 collapse navbar-collapse">
+        <ul class="nav ms-auto py-1" style="font-size: 13px;">
+          <li class="nav-item">
+            <a class="nav-link me-1 text-light" href="#">MyWCTC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-1 text-light" href="#">Student Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-1 text-light" href="#">Alumni</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn me-1 text-light" id="btn-searchbar" type="button" data-bs-toggle="collapse" data-bs-target="#div-searchbar" aria-controls="div-searchbar" aria-expanded="false" aria-label="Toggle search bar">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-100 bg-light">
+      <div class="content-width w-100 d-flex flex-wrap mx-auto">
+        <a class="navbar-brand w-25 p-3" href="#">
+          <img src="res/waukesha_logo.svg" width="250">
+        </a>
+        <button class="btn navbar-toggler h-100 shadow-none border-0 ms-auto mt-2 me-2" id="btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-offcanvas" aria-controls="nav-offcanvas" aria-expanded="false" aria-label="Toggle offcanvas navigation">
+          <i class="fa-solid fa-bars" style="font-size:22px;"></i>
+        </button>
+        <div class="offcanvas offcanvas-end bg-primary text-primary" tabindex="-1" data-bs-scroll="true" id="nav-offcanvas" aria-labelledby="nav-offcanvas" style="width: fit-content;">
+          <ul class="nav flex-column flex-nowrap flex-md-row h-100 ms-auto fw-bold" id="primary-nav" style="font-size: 14px; ">
+            <li class="nav-item d-flex align-items-center border-light border-opacity-25 expand-items">
+              <div class="dropdown d-flex flex-column justify-content-center w-100 h-100">
+                <div class="d-flex align-items-center w-100 h-100">
+                  <a class="btn border-end border-0 border-primary p-dropdown-toggle" href="#" aria-expanded="false">
+                    ACADEMICS
+                  </a>
+                  <button class="btn nav-item d-flex align-items-center p-3 d-md-none ms-auto btn-expand">
+                    <i class="fa-solid fa-plus" style="font-size: 9px;"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu border-primary border-md-3 px-1 py-0" style="font-size: 15px;">
+                  <ul class="nav flex-column flex-md-row py-1">
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Academic Programs</a>
+                      <a class="nav-link px-3 py-2" href="#">Academic Calendar</a>
+                      <a class="nav-link px-3 py-2" href="#">Courses, Training, and Continuing Education</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Course Search</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Register for Courses</a>
+                      <a class="nav-link px-3 py-2" href="#">Graduation</a>
+                      <a class="nav-link px-3 py-2" href="#">Request a WCTC Transcript</a>
+                    </li>
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">High School Dual Credit</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">WCTC Excelerate</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Dual Enrollment Academy</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Start College Now</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Transcript Credit & Advanced Standing</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Youth Apprenticeships</a>
+                      <a class="nav-link px-3 py-2" href="#">High School Completion</a>
+                      <a class="nav-link px-3 py-2" href="#">English as a Second Language</a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Academic Resources</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Testing Services</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Academic Support</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Academic Advising</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Students with Disabilities</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Change Your Program</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Add, Drop, or Withdraw from Classes</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Online Learning</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-flex align-items-center border-light border-opacity-25 expand-items">
+              <div class="dropdown d-flex flex-column justify-content-center w-100 h-100">
+                <div class="d-flex align-items-center w-100 h-100">
+                  <a class="btn border-end border-0 border-primary p-dropdown-toggle" href="#" aria-expanded="false">
+                    ADMISSIONS
+                  </a>
+                  <button class="btn nav-item d-flex align-items-center p-3 d-md-none ms-auto btn-expand">
+                    <i class="fa-solid fa-plus" style="font-size: 9px;"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu border-primary border-md-3 px-1 py-0" style="font-size: 15px;">
+                  <ul class="nav flex-column flex-md-row py-1">
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Apply to WCTC</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Next Steps After You're Accepted</a>
+                      <a class="nav-link px-3 py-2" href="#">Visit WCTC</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Open House</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Campus Maps</a>
+                    </li>
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Register Courses</a>
+                      <a class="nav-link px-3 py-2" href="#">Tuition & Aid</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Financial Aid</a>
+                      <a class="nav-link px-3 py-2" href="#">Earning Credit for Prior Learning</a>
+                      <a class="nav-link px-3 py-2" href="#">New Student Orientation</a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Transfer Students</a>
+                      <a class="nav-link px-3 py-2" href="#">International Students</a>
+                      <a class="nav-link px-3 py-2" href="#">Veterans</a>
+                      <a class="nav-link px-3 py-2" href="#">Students with Disabilities</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-flex align-items-center border-light border-opacity-25 expand-items">
+              <div class="dropdown d-flex flex-column justify-content-center w-100 h-100">
+                <div class="d-flex align-items-center w-100 h-100">
+                  <a class="btn border-end border-0 border-primary p-dropdown-toggle" href="#" aria-expanded="false">
+                    CAMPUS LIFE
+                  </a>
+                  <button class="btn nav-item d-flex align-items-center p-3 d-md-none ms-auto btn-expand">
+                    <i class="fa-solid fa-plus" style="font-size: 9px;"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu border-primary border-md-3 px-1 py-0" style="font-size: 15px;">
+                  <ul class="nav flex-column flex-md-row py-1">
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Events Calendar</a>
+                      <a class="nav-link px-3 py-2" href="#">Bookstore</a>
+                      <a class="nav-link px-3 py-2" href="#">Library</a>
+                      <a class="nav-link px-3 py-2" href="#">Career Connections</a>
+                      <a class="nav-link px-3 py-2" href="#">Dining</a>
+                    </li>
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Wellness & Support</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Mental Health</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Counseling Services</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Fitness at WCTC</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Center</a>
+                      <a class="nav-link px-3 py-2" href="#">College Safety and Security</a>
+                    </li>
+                    <li class="d-flex flex-column p-0 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Activities & Organizations</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Multicultural</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Engagement Center</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Student Clubs</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Student Government Association</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Study Abroad</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-flex align-items-center border-light border-opacity-25 expand-items">
+              <div class="dropdown d-flex flex-column justify-content-center w-100 h-100">
+                <div class="d-flex align-items-center w-100 h-100">
+                  <a class="btn border-end border-0 border-primary p-dropdown-toggle" href="#" aria-expanded="false">
+                    COMMUNITY
+                  </a>
+                  <button class="btn nav-item d-flex align-items-center p-3 d-md-none ms-auto btn-expand">
+                    <i class="fa-solid fa-plus" style="font-size: 9px;"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu border-primary border-md-3 px-1 py-0" style="font-size: 15px;">
+                  <ul class="nav flex-column flex-md-row py-1">
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Courses, Training & Continuing Education</a>
+                      <a class="nav-link px-3 py-2" href="#">Business Resources</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Corporate Training Center</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Small Business Center</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Hire WCTC Talent</a>
+                    </li>
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Student-Provided Services</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Style & Class Salon and Spa</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">The Classic Room & Classic Bistro</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Dental Hygiene Clinic</a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Facility Rentals</a>
+                      <a class="nav-link px-3 py-2" href="#">Child Development Center</a>
+                      <a class="nav-link px-3 py-2" href="#">Learning in Retirement</a>
+                      <a class="nav-link px-3 py-2" href="#">U.S. Citizenship</a>
+                      <a class="nav-link px-3 py-2" href="#">English as a Second Language</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-flex align-items-center border-light border-opacity-25 expand-items">
+              <div class="dropdown d-flex flex-column justify-content-center w-100 h-100">
+                <div class="d-flex align-items-center w-100 h-100">
+                  <a class="btn border-0 border-primary p-dropdown-toggle" href="#" aria-expanded="false">
+                    ABOUT
+                  </a>
+                  <button class="btn nav-item d-flex align-items-center p-3 d-md-none ms-auto btn-expand">
+                    <i class="fa-solid fa-plus" style="font-size: 9px;"></i>
+                  </button>
+                </div>
+                <div class="dropdown-menu last border-primary border-md-3 px-1 py-0" style="font-size: 15px;">
+                  <ul class="nav flex-column flex-md-row py-1">
+                    <li class="d-flex flex-column border-2 p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Leadership</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">District Board</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Diversity, Equity and Inclusion</a>
+                      <a class="nav-link px-3 py-2" href="#">WCTC Foundation</a>
+                      <a class="nav-link px-3 py-2" href="#">Accreditation</a>
+                      <a class="nav-link px-3 py-2" href="#">Critical Life Skills</a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a class="nav-link px-3 pt-0 pb-2" href="#">Institutional Effectiveness</a>
+                      <a class="nav-link px-3 py-2" href="#">Campus & Academic Policies</a>
+                      <a class="nav-link px-3 py-2" href="#">Publications</a>
+                      <a class="nav-link px-4 py-0 fw-normal" href="#">Current Catalog</a>
+                      <a class="nav-link px-3 py-2" href="#">Forms</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="d-md-none">
+              <div class="d-flex px-0 py-3">
+                <div>
+                  <input class="mx-2 ps-2 py-1" placeholder="Search" style="font-size: 14px; min-width: 0;">
+                </div>
+                <button class="btn float-end px-1">
+                  <i class="fa-solid fa-magnifying-glass fa-md text-light"></i>
+                </button>
+              </div>
+              <ul class="nav flex-column text-light" style="font-size: 13px;">
+                <li class="nav-item">
+                  <a class="nav-link px-2" href="#">MyWCTC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-2" href="#">Student Resources</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-2" href="#">Alumni</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+    <div class="d-flex align-items-center object-fit-cover" id="hero-banner">
+      <div class="content-width w-100 mx-auto ps-3">
+        <h1 class="text-light fw-bold">Career Connections</h1>
+      </div>
+    </div>
+    <div class="content-width w-100 mx-auto px-3">
+      <ul class="d-flex list-inline" id="page-links" style="font-size: 14px;">
+        <li class="nav-item d-flex pe-2">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item d-flex pe-2">
+          <a class="nav-link" href="#">Campus Life</a>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link fw-bold" href="#">Career Connections</a>
+        </li>
+      </ul>
+      <div class="row g-0 my-5">
+        <div class="col-12 col-lg-6" id="resources-div">
+          <h5 class="fw-bold">Dedicated to Your Success</h5>
+          <p class="my-3">
+            It’s not enough to simply get a degree — it takes strategy and 
+            effort to position yourself for long-term career success. WCTC’s Career 
+            Connections can help, whether you’re still exploring career directions, 
+            searching for the perfect internship or prepping for that big job interview.
+          </p>
+          <button class="btn btn-square position-relative btn-text-top-anim bg-warning px-4 py-3 fw-bold text-primary">
+              <div class="position-relative">
+                Career Connections Resources >
+                <span class="d-block w-50 float-end"></span>
+              </div>
+          </button>
+        </div>
+        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+          <ul class="nav flex-column flex-lg-row nav-tabs border-0 px-lg-4" id="contact-card-tabs">
+            <li class="container-collapse w-75 w-md-100 w-lg-auto order-lg-1 mb-3 mb-lg-0 tab-header">
+              <div class="d-flex flex-row-reverse w-100 h-100 border border-lg-0 border-primary-emphasis">
+                <button class="btn btn-collapse flex-grow-1 me-1 px-4 py-4 position-relative" data-bs-toggle="collapse" href="#contact-card-1" role="button" aria-expanded="true" aria-controls="contact-card-1" id="btn-contact-card-1">
+                  <span class="d-flex align-items-center justify-content-center h-100">
+                    CONTACT INFORMATION
+                  </span>
+                  <div class="bg-primary position-absolute start-0 end-0 mx-auto popdown-div"></div>
+                </button>
+                <button class="btn d-flex justify-content-center align-items-center d-lg-none px-4 ar-1" style="margin-right:1px;">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+              </div>
+            </li>
+            <li class="collapse show nav-item order-lg-3 border border-primary-emphasis tab" id="contact-card-1">
+              <div class="py-4">
+                <h6 class="p-3 fw-bold">WCTC Career Connections</h6>
+                <div class="d-flex flex-wrap text-primary">
+                  <div class="d-flex w-50 ps-3">
+                    <i class="fa-solid fa-envelope bg-info text-light d-flex justify-content-center align-items-center"></i>
+                    <a class="ms-1" href="#">careers@wctc.edu</a>
+                  </div>
+                  <div class="d-flex w-50 ps-3">
+                    <i class="fa-solid fa-location-dot bg-info text-light d-flex justify-content-center align-items-center"></i>
+                    <p class="ms-1">College Center, Room C-021</p>
+                  </div>
+                  <div class="d-flex w-50 ps-3 pt-1 pb-5">
+                    <i class="fa-solid fa-phone bg-info text-light d-flex justify-content-center align-items-center"></i>
+                    <a class="ms-1" href="#">262.695.7848</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="container-collapse w-75 w-md-100 w-lg-auto order-lg-1 mb-3 mb-lg-0 tab-header">
+              <div class="d-flex flex-row-reverse w-100 h-100 border border-lg-0 border-primary-emphasis">
+                <button class="btn btn-collapse flex-grow-1 me-1 px-4 py-4 position-relative" data-bs-toggle="collapse" href="#contact-card-2" role="button" aria-expanded="false" aria-controls="contact-card-2" id="btn-contact-card-2">
+                  <span class="d-flex align-items-center justify-content-center h-100">
+                    OFFICE HOURS
+                  </span>
+                  <div class="bg-primary position-absolute start-0 end-0 mx-auto popdown-div"></div>
+                </button>
+                <button class="btn d-flex justify-content-center align-items-center d-lg-none px-4 ar-1" style="margin-right:1px;">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </li>
+            <li class="collapse w-100 order-lg-4 border border-primary-emphasis tab" id="contact-card-2">
+              <div class="py-4">
+                <button class="btn btn-square bg-primary btn-text-top-anim brighten-2 text-light ms-3 px-4 py-3 fw-bold">
+                  <div class="position-relative">
+                    View Current Hours >
+                    <span class="d-block w-50 float-end"></span>
+                  </div>
+                </button>
+                <br/>
+                <button class="btn btn-square bg-success btn-text-top-anim brighten text-primary ms-3 mt-4 px-4 py-3 fw-bold">
+                  <div class="position-relative">
+                    Schedule An Appointment >
+                    <span class="d-block w-50 float-end"></span>
+                  </div>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 bg-primary-emphasis py-5">
+      <div class="content-width w-100 mx-auto bg-primary-emphasis px-3">
+        <h3 class="text-primary fw-bold pb-2">Career Planning for Adults</h3>
+        <p>
+          The secret to landing a job you love: discover how you can best 
+          leverage your interests, strengths, values, skills and personality 
+          in the workplace. Explore these tools to help you plan your next step.
+        </p>
+        <ul class="nav flex-wrap">
+          <li class="d-flex flex-row-reverse w-100 border border-primary my-2 container-collapse" style="height: 65px;">
+            <button class="btn btn-square btn-collapse flex-grow-1 border-0 p-0 fs-5" data-bs-toggle="collapse" href="#info-collapse-1" role="button" aria-expanded="false" aria-controls="info-collapse-1">
+              <span class="h-100 d-flex align-items-center justify-content-center">
+                EXPLORE CAREERS
+              </span>
+            </button>
+            <button class="btn btn-square bg-primary text-light" style="aspect-ratio: 1; margin-right: 1px;">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </li>
+          <li class="collapse" id="info-collapse-1">
+            <div class="px-1 pt-3 pb-5">
+              <ul>
+                <li>
+                  <span class="fw-bold">Career Development:</span> This one-credit 
+                  course will help you learn about your interests, values and 
+                  skills through various activities, including the Myers-Briggs 
+                  Type Indicator (MBTI) and Strong Interest Inventory assessments. 
+                  <a href="#">Register now</a> for an online or in-person course.
+                </li>
+                <li>
+                  <span class="fw-bold">Career Exploration:</span> In this interactive 
+                  and personalized workshop, you’ll complete assessments 
+                  to identify potential careers based on your values, 
+                  skills and interests. Find an <a href="#">upcoming session</a>.
+                </li>
+                <li>
+                  <span class="fw-bold">Meet with a Career Specialist:</span> Our Career 
+                  Specialists can help you navigate your career and employment options. 
+                  Call to make an appointment.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-row-reverse w-100 border border-primary my-2 container-collapse" style="height: 65px;">
+            <button class="btn btn-square btn-collapse flex-grow-1 border-0 p-0 fs-5" data-bs-toggle="collapse" href="#info-collapse-2" role="button" aria-expanded="false" aria-controls="info-collapse-">
+              <span class="h-100 d-flex align-items-center justify-content-center">
+                FIND YOUR FIT: CAREER ASSESSMENT TOOLS
+              </span>
+            </button>
+            <button class="btn btn-square bg-primary text-light" style="aspect-ratio: 1; margin-right: 1px;">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </li>
+          <li class="collapse" id="info-collapse-2">
+            <div class="px-1 pt-3 pb-5">
+              <span>
+                Overwhelmed by the options? These career assessments can narrow your focus:
+              </span>
+              <ul>
+                <li>
+                  <a class="fw-bold" href="#">My Next Move</a>: This interactive tool matches your interests 
+                  with 900-plus careers and training pathways.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">YouScience</a>: Learn about what you naturally do well and what you like 
+                  doing through this in-depth assessment to connect you to 
+                  career options. Contact Career Connections today to get started.
+                </li>
+              </ul>
+              <span>
+                When you have your results, schedule an appointment with one 
+                of our Career Specialists.
+              </span>
+            </div>
+          </li>
+          <li class="d-flex flex-row-reverse w-100 border border-primary my-2 container-collapse" style="height: 65px;">
+            <button class="btn btn-square btn-collapse flex-grow-1 border-0 p-0 fs-5" data-bs-toggle="collapse" href="#info-collapse-3" role="button" aria-expanded="false" aria-controls="info-collapse-3">
+              <span class="h-100 d-flex align-items-center justify-content-center">
+                RESEARCH EDUCATION AND TRAINING OPTIONS
+              </span>
+            </button>
+            <button class="btn btn-square bg-primary text-light" style="aspect-ratio: 1; margin-right: 1px;">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </li>
+          <li class="collapse" id="info-collapse-3">
+            <div class="px-1 pt-3 pb-5">
+              <ul>
+                <li>
+                  <span class="fw-bold">WCTC:</span> Find a <a href="#">WCTC program</a> 
+                  that fits your interests.
+                </li>
+                <li>
+                  <span class="fw-bold">Other 
+                    <a  href="#">Wisconsin technical colleges:</a>
+                  </span> The Wisconsin Technical College System has 49 campuses. 
+                  The colleges offer more than 300 programs awarding two-year associate 
+                  degrees, one- and two-year technical diplomas, and short-term technical 
+                  diplomas.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">University of Wisconsin System:</a> The UW System 
+                  is one of the world's premier public university systems. 
+                  It educates more than 181,000 students on 26 campuses.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Wisconsin Bureau of Apprenticeship:</a> An 
+                  apprenticeship combines on-the-job learning under the supervision of 
+                  experienced journey workers with related classroom instruction.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Associated Builders and Contractors:</a> This 
+                  national trade association for the construction industry offers 
+                  education and training opportunities.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Armed Forces Careers:</a> Get information about 
+                  careers in the Army, Air Force, Navy, Marines and the U.S. Coast Guard.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Waukesha County Workforce Development Center:</a> A 
+                  proud partner of the American Job Center network, the center and 
+                  its partner agencies may provide educational and training funding to 
+                  qualified participants.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <h3 class="text-primary fw-bold mt-5 pb-2">Career Planning for Youth</h3>
+        <p>
+          Career planning can be exciting, but also a little overwhelming. 
+          Fortunately, WCTC’s Career Connections offers a wealth of 
+          resources to help middle and high school students, and 
+          their parents and guidance counselors navigate this process.
+        </p>
+        <ul class="nav flex-wrap">
+          <li class="d-flex flex-row-reverse w-100 border border-primary my-2 container-collapse" style="height: 65px;">
+            <button class="btn btn-square btn-collapse flex-grow-1 border-0 fs-5" data-bs-toggle="collapse" href="#info-collapse-4" role="button" aria-expanded="false" aria-controls="info-collapse-4">
+              <span class="w-100 h-100 d-flex align-items-center justify-content-center">
+                CAREER PLANNING AND EXPLORATION
+              </span>
+            </button>
+            <button class="btn btn-square bg-primary text-light" style="aspect-ratio: 1; margin-right: 1px;">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </li>
+          <li class="collapse" id="info-collapse-4">
+            <div class="px-1 pt-3 pb-5">
+              <ul>
+                <li>
+                  Career Connections provides career-planning appointments for parents and 
+                  youth. Please call to make an appointment.
+                </li>
+                <li>
+                  WCTC’s <a class="fw-bold" href="#">Work Style Quiz</a> 
+                  (which takes 60 seconds or less) and the Career Clusters Quiz are 
+                  easy ways to narrow down your options.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">My Next Move</a>: This interactive tool 
+                  covers tasks, skills, salary information and more for 900-plus careers.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Mapping Your Future</a>: This interactive tool covers tasks, skills, salary information and more for 900-plus careers.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-row-reverse w-100 border border-primary my-2 container-collapse" style="height: 65px;">
+            <button class="btn btn-square btn-collapse flex-grow-1 border-0 fs-5" data-bs-toggle="collapse" href="#info-collapse-5" role="button" aria-expanded="false" aria-controls="info-collapse-5">
+              <span class="h-100 d-flex align-items-center justify-content-center">
+                EDUCATION AND TRAINING OPTIONS FOR AFTER HIGH SCHOOL
+              </span>
+            </button>
+            <button class="btn btn-square bg-primary text-light" style="aspect-ratio: 1; margin-right: 1px;">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </li>
+          <li class="collapse" id="info-collapse-5">
+            <div class="px-1 pt-3 pb-5">
+              <ul>
+                <li>
+                  <span class="fw-bold">WCTC:</span> Find a 
+                  <a href="#">WCTC program</a> that fits your interests.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Other Wisconsin technical colleges</a>: 
+                  The Wisconsin Technical College System has 49 campuses. The colleges 
+                  offer more than 300 programs awarding two-year associate degrees, 
+                  one and two-year technical diplomas, and short-term technical diplomas.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">University of Wisconsin System</a>: The 
+                  UW System is one of the world’s premier public university systems. 
+                  It educates more than 181,000 students on 26 campuses.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-row-reverse w-100 border border-primary my-2 container-collapse" style="height: 65px;">
+            <button class="btn btn-square btn-collapse flex-grow-1 border-0 fs-5" data-bs-toggle="collapse" href="#info-collapse-6" role="button" aria-expanded="false" aria-controls="info-collapse-6">
+              <span class="h-100 d-flex align-items-center justify-content-center">
+                OTHER TRAINING OPTIONS
+              </span>
+            </button>
+            <button class="btn btn-square bg-primary text-light" style="aspect-ratio: 1; margin-right: 1px;">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </li>
+          <li class="collapse" id="info-collapse-6">
+            <div class="px-1 pt-3 pb-5">
+              <ul>
+                <li>
+                  <a class="fw-bold" href="#">Wisconsin Bureau of Apprenticeship</a>: An 
+                  apprenticeship combines on-the-job learning under the supervision of 
+                  experienced journey workers with related classroom instruction.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Associated Builders and Contractors</a>: This 
+                  national trade association for the construction industry offers education 
+                  and training opportunities.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Armed Forces Careers</a>: Get information about 
+                  careers in the Army, Air Force, Navy, Marines and the U.S. Coast Guard.
+                </li>
+                <li>
+                  <a class="fw-bold" href="#">Waukesha County Workforce Development Center</a>
+                  : A proud partner of the American Job Center network, the center 
+                  and its partner agencies may provide educational and training funding to 
+                  qualified participants.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-width w-100 mx-auto px-3 py-5">
+      <h1 class="fw-bold text-primary">Looking for a Job</h1>
+      <div class="d-flex flex-wrap flex-lg-nowrap px-2 py-4">
+        <div class="d-flex flex-column w-xl-50">
+          <h4 class="fw-bold">Internships</h4>
+          <p>
+            Internships give you hands-on, practical work experience in your area of study. 
+            Other reasons to consider an internship:
+          </p>
+          <ul>
+            <li>
+              Immerse yourself in your field to make sure 
+              it's something you really want to pursue
+            </li>
+            <li>Gain job-related skills and experience to add to your resume</li>
+            <li>Secure future job references</li>
+            <li>Earn college credits</li>
+          </ul>
+          <a class="btn btn-square position-relative align-self-start justify-self-end btn-text-top-anim bg-warning px-4 py-3 fw-bold text-primary" href="">
+            <div class="position-relative">
+              Find An Internship >
+              <span class="d-block w-50 float-end"></span>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex flex-column ps-lg-5 mt-5 mt-lg-0 justify-content-between w-xl-50">
+          <h4 class="fw-bold">Handshake</h4>
+          <p>
+            Handshake is a free online resource that connects employers with talented 
+            students and alumni statewide.
+          </p>
+          <ul>
+            <li>
+              Searchable employment database of part and full-time jobs submitted by 
+              employers interested in hiring students and alumni from the 16 Wisconsin 
+              Technical Colleges.
+            </li>
+            <li>Information on virtual recruiting, job fairs, workshops and other events.</li>
+          </ul>
+          <button class="btn btn-square position-relative align-self-start btn-text-top-anim bg-warning px-4 py-3 fw-bold text-primary" style="justify-self: end !important;">
+            <div class="position-relative">
+              Explore Opportunities >
+              <span class="d-block w-50 float-end"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="py-2">
+        <h4 class="fw-bold">Job Search Tips</h4>
+        <p>
+          There’s a lot that goes into landing your dream job. If you've lost 
+          your job or are ready for a new challenge, take advantage of Career 
+          Connections’ many <a href="#">classes and workshops</a>. Follow these tips to make your job 
+          search as smooth and successful as possible:
+        </p>
+      </div>
+      <div class="d-flex border border-primary-emphasis shadow-sm">
+        <div class="align-self-start d-flex bg-secondary justify-content-center align-items-center fs-1 text-light" style="aspect-ratio: 1; width: 75px;">
+          <span class="fw-bold">1</span>
+        </div>
+        <div class="w-100 px-4 py-4">
+          <h5 class="text-primary fw-bold">Create a Stellar Resume</h5>
+          <ul>
+            <li>
+              Use <a href="#">action verbs</a> to give your resume power and direction. 
+              This list features verbs and descriptive words that will get the 
+              employer’s attention.
+            </li>
+            <li>
+              Upload your resume in <a href="#">Handshake</a> so employers can find you. 
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex border border-primary-emphasis shadow-sm mt-3">
+        <div class="align-self-start d-flex bg-info justify-content-center align-items-center fs-1 text-light" style="aspect-ratio: 1; width: 75px;">
+          <span class="fw-bold">2</span>
+        </div>
+        <div class="w-100 px-4 py-4">
+          <h5 class="text-primary fw-bold">Prepare for Interviewing</h5>
+          <ul>
+            <li>
+              Consider an <a href="#">informational interview</a> to explore new fields.
+            </li>
+            <li>
+              Check out Career Connections' <a href="#">interviewing tips</a>.
+            </li>
+            <li>
+              Be ready for a <a href="#">behavioral interview</a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex border border-primary-emphasis shadow-sm mt-3">
+        <div class="align-self-start d-flex bg-warning justify-content-center align-items-center fs-1 text-light" style="aspect-ratio: 1; width: 75px;">
+          <span class="fw-bold">3</span>
+        </div>
+        <div class="w-100 px-4 py-4">
+          <h5 class="text-primary fw-bold">Attend Job Fairs</h5>
+          <p>
+            Companies send recruiters, human resources staff, supervisors or current 
+            employees to the fair for the purpose of:
+          </p>
+          <ul>
+            <li>Marketing their company</li>
+            <li>Establishing a pool of applicants</li>
+            <li>Prescreening applicants for interviews</li>
+            <li>Interviewing</li>
+          </ul>
+          <p>
+            Your goal is to make positive contacts with potential employers. 
+            Learn how to work a job fair.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex border border-primary-emphasis shadow-sm mt-3">
+        <div class="align-self-start d-flex bg-success justify-content-center align-items-center fs-1 text-light" style="aspect-ratio: 1; width: 75px;">
+          <span class="fw-bold">4</span>
+        </div>
+        <div class="w-100 px-4 py-4">
+          <h5 class="text-primary fw-bold">Compare Job Offers</h5>
+          <p>
+            Career Connections offers <a href="#">these tips</a> for evaluating an offer.
+          </p>
+        </div>
+      </div>
+      <div class="pt-5">
+        <h4 class="fw-bold">If You've Lost Your Job</h4>
+        <ul>
+          <li>
+            Take advantage of Career Connections’ many services, including workshops, 
+            walk-ins and one-on-one appointments.
+          </li>
+          <li>
+            Register for our noncredit <a href="#">Computer Literacy</a> course to improve 
+            your computer skills.
+          </li>
+          <li>
+            Consider one of WCTC's short-term, accelerated or traditional 
+            <a href="#">programs</a> to update your skills.
+          </li>
+          <li>
+            Contact the <a href="#">Workforce Development Center</a> to learn 
+            about additional training and employment services and programs.
+          </li>
+          <li>
+            Explore resources. The Internet offers an abundance of 
+            career-planning and job-searching sites, but it can be difficult to 
+            know where to start. We highly recommend you connect with one of our 
+            Career Specialists to focus your job-searching efforts, but in the meantime, 
+            check out these <a href="#">resources</a> to get you started.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-100 d-flex flex-column align-items-center py-5" id="striped-banner">
+      <h3 class="text-primary fw-bold">More Career Connections Resources</h3>
+      <div class="content-width w-100 d-flex flex-column flex-lg-row px-3">
+        <div class="d-flex flex-column justify-content-between mt-3">
+          <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle" style="width: 75px; height: 75px;">
+            <img src="res/calendar.png" style="width: 35px;">
+          </div>
+          <a class="nav-link text-primary fs-5 fw-bold mt-3" href="#">Schedule an Appointment</a>
+          <p>
+            Set up a one-on-one appointment with a Career Specialist at WCTC.
+          </p>
+          <a class="btn btn-square bg-primary align-self-start btn-text-top-anim brighten-2 text-light px-4 py-3 mt-4 fw-bold" href="#">
+            <div class="position-relative">
+              Schedule Now
+              <span class="d-block w-50 float-end"></span>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex flex-column justify-content-between mt-3 ps-lg-3">
+          <div class="d-flex justify-content-center align-items-center bg-secondary rounded-circle" style="width: 75px; height: 75px;">
+            <img src="res/teaching.png" style="width: 35px;">
+          </div>
+          <a class="nav-link text-primary fs-5 fw-bold mt-3" href="#">Workshop Calendar</a>
+          <p>
+            Career Connections offers virtual and on-demand workshops.
+          </p>
+          <a class="btn btn-square bg-primary align-self-start btn-text-top-anim brighten-2 text-light px-4 py-3 mt-4 fw-bold" href="#">
+            <div class="position-relative">
+              Upcoming Sessions
+              <span class="d-block w-50 float-end"></span>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex flex-column justify-content-between mt-3 ps-lg-3">
+          <div class="d-flex justify-content-center align-items-center bg-info rounded-circle" style="width: 75px; height: 75px;">
+            <img src="res/book-with-apple.png" style="width: 35px;">
+          </div>
+          <a class="nav-link text-primary fs-5 fw-bold mt-3" href="#">Choosing a WCTC Program</a>
+          <p>
+            Not sure where to start? Find resources for undecided students.
+          </p>
+          <a class="btn btn-square bg-primary align-self-start btn-text-top-anim brighten-2 text-light px-4 py-3 mt-4 fw-bold" href="#">
+            <div class="position-relative">
+              Learn More
+              <span class="d-block w-50 float-end"></span>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex flex-column justify-content-between mt-3 ps-lg-3">
+          <div class="d-flex justify-content-center align-items-center bg-primary rounded-circle" style="width: 75px; height: 75px;">
+            <img src="res/work.png" style="width: 35px;">
+          </div>
+          <a class="nav-link text-primary fs-5 fw-bold mt-3" href="#">Nontraditional Occupations</a>
+          <p>
+            Shake things up! Explore career options that defy the status quo.
+          </p>
+          <a class="btn btn-square bg-primary align-self-start btn-text-top-anim brighten-2 text-light px-4 py-3 mt-4 fw-bold" href="#">
+            <div class="position-relative">
+              Discover Careers
+              <span class="d-block w-50 float-end"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid bg-primary p-0" id="footer-banner">
+      <div class="content-width w-100 mx-auto px-5 py-5">
+        <div class="row text-light">
+          <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center text-center px-5" id="brand">
+            <img src="res/waukesha_logo2.svg" width="250">
+            <div class="d-flex flex-md-column" style="font-size: 15px;">
+              <div class="d-flex flex-column w-50 w-md-auto">
+                <a class="nav-link mt-3" href="#">
+                  <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
+                  262.691.5566
+                </a>
+                <span>Wisconsin Relay System: 711</span>
+              </div>
+              <a class="nav-link w-50 w-md-auto ms-3 ms-md-0 mt-4" href="#">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                800 Main Street, Pewaukee, WI 53072
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center px-5 mt-2 mt-md-0" id="links">
+            <button class="btn btn-square w-50 border text-light fw-bold">
+              CONTACT US
+            </button>
+            <button class="btn btn-square w-50 border text-light fw-bold mt-3">
+              WCTC FOUNDATION
+            </button>
+            <button class="btn btn-square w-50 border text-light fw-bold mt-3">
+              WCTC CAREERS
+            </button>
+            <button class="btn btn-square w-50 border text-light fw-bold mt-3">
+              DISTRICT BOARD
+            </button>
+          </div>
+          <div class="col-12 col-md-3 d-flex flex-column justify-content-center px-5 mt-5 mt-md-0">
+            <div class="d-flex justify-content-center pb-4" style="font-size: 24px;" id="socials">
+              <div class="d-flex justify-content-center align-items-center rounded-circle border border-2" style="width: 45px; aspect-ratio: 1;">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </div>
+              <div class="d-flex justify-content-center align-items-center rounded-circle border border-2 ms-1" style="width: 45px; aspect-ratio: 1;">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div class="d-flex justify-content-center align-items-center rounded-circle border border-2 ms-1" style="width: 45px; height: 45px;">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <div class="d-flex justify-content-center align-items-center rounded-circle border border-2 ms-1" style="width: 45px; aspect-ratio: 1;">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row pt-4" id="logos">
+              <a class="col-6 d-flex justify-content-center" href="#">
+                <img src="res/wtcs-member-logo.png">
+              </a>
+              <a class="col-6 d-flex justify-content-center" href="#">
+                <img src="res/hlc-logo.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-light row py-2 px-5 m-0" id="bottom" style="font-size: 12px;">
+        <div class="col-12 col-md-10 offset-md-1 d-flex justify-content-center">
+          <a class="nav-link me-2" href="#">©</a>
+          <span>2022 Waukesha County Technical College</span>
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center">
+          <a class="nav-link" href="#">Legal</a>
+          <a class="nav-link px-3" href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/b3b9250d86.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+  font-family: Karla, sans-serif;
+}
+
+#div-searchbar {
+  font-size: 2rem;
+}
+
+.content-width {
+  max-width: 1200px; 
+}
+
+.navbar-brand {
+  min-width: fit-content; 
+}
+
+.navbar-brand > img {
+  max-width: 100%; 
+}
+
+#primary-nav .dropdown div:first-child {
+  border-bottom: 8px solid transparent; 
+  transition: border-bottom 2s;
+}
+
+#primary-nav .dropdown div:first-child:hover {
+  border-color: var(--bs-primary); 
+}
+
+#primary-nav a {
+  font-size: inherit;
+  font-weight: inherit; 
+  color: inherit;
+  border-radius: 0;
+}
+
+#primary-nav .dropdown-menu {
+  width: 675px; 
+  margin-top: 0;
+  border-width: 0;
+  border-radius: 0; 
+  color: inherit;
+}
+
+#primary-nav .dropdown-menu.last {
+  width: 450px; 
+}
+
+#primary-nav .dropdown-menu li {
+  width: calc(100% / 3);
+  border-right-style: solid; 
+  border-right-color: var(--bs-gray-400);
+  border-right-width: 0;
+}
+
+#primary-nav .dropdown-menu.last li {
+  width: 50%;
+}
+
+#primary-nav .dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+.offcanvas::-webkit-scrollbar {
+  display: none;
+}
+
+.offcanvas .btn-expand {
+  color: inherit;
+  border-radius: 4px;
+}
+
+.offcanvas .expand-items:hover .btn-expand:hover {
+  background-color: rgb(216, 216, 216); 
+}
+
+.offcanvas.show .expand-items:hover .dropdown, .offcanvas.show #primary-nav .dropdown.show  {
+  background-color: white;
+}
+
+.offcanvas.show #primary-nav .p-dropdown-toggle {
+  padding: 10px 55px 10px 10px;
+}
+
+header .offcanvas-backdrop.show {
+  opacity: 0;
+}
+
+/*
+  Media Queries
+*/
+
+@media (max-width: 767px) {
+  #nav-offcanvas {
+    margin-top: 50px; 
+    overflow-y: scroll; 
+  }
+
+  #primary-nav {
+    padding: 2px 0 2px 2px;
+  }
+
+  #primary-nav .expand-items .dropdown {
+    color: white;
+  }
+
+  #primary-nav .expand-items:hover .dropdown {
+    color: inherit; 
+  }
+
+  #primary-nav .dropdown.show {
+    color: inherit;
+  }
+
+  #primary-nav .dropdown div:first-child {
+    border-bottom: none; 
+  }
+
+  #primary-nav .dropdown .dropdown-menu {
+    width: auto; 
+    position: static;
+  }
+
+  #primary-nav .dropdown-menu ul {
+    white-space: nowrap;
+  }
+
+  .dropdown-menu ul li {
+    width: auto; 
+  }
+
+  #primary-nav .dropdown-menu li {
+    border: none;
+  }
+}
+
+@media (max-width: 675px) {
+  /* Move offcanvas navbar down so it doesn't overlap with header */
+  #nav-offcanvas {
+    margin-top: 88px;
+  }
+}
+
+/*
+  Animations
+*/
+
+@keyframes expand {
+  from { width: 75%; }
+  to { width: 100%; }
+}
+
+nav {
+  width: 100%;
+  animation-name: expand;
+  animation-duration: 0.75s; 
+}

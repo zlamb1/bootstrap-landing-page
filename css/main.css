@@ -1,0 +1,160 @@
+@import './custom.css';
+
+main {
+  margin-top: 134px;
+}
+
+main ul {
+  list-style-type: disc;
+}
+
+main a {
+  color: var(--bs-primary);
+}
+
+main i {
+  transition: transform 0.2s;
+}
+
+#hero-banner {
+  background-image: url('../res/foundation.jpg');
+  background-size: cover; 
+  background-position: 50% 50%;
+  height: 300px; 
+}
+
+.min-w-50 {
+  min-width: 50%;
+}
+
+#page-links > li:not(:first-child)::before {
+  content: '>';
+  margin-right: 4px; 
+}
+
+#page-links > li:hover > a {
+  text-decoration: underline;
+}
+
+.btn-square {
+  border-radius: 0;
+}
+
+.btn-text-top-anim.brighten {
+  filter: brightness(100%);
+  transition: filter 0.5s;
+}
+
+.btn-text-top-anim.brighten:hover {
+  filter: brightness(120%);
+}
+
+.btn-text-top-anim.brighten-2:hover {
+  filter: brightness(140%);
+}
+
+.btn-text-top-anim > div {
+  top: 0;
+  transition: top 0.3s;
+}
+
+.btn-text-top-anim:hover > div {
+  top: -10px;
+}
+
+.btn-text-top-anim > div > span {
+  height: 2px; 
+}
+
+.btn-text-top-anim:hover > div > span {
+  background-color: white;
+}
+
+.tab-header .btn {
+  border-radius: 8px 8px 0 0;
+  font-size: 16px;
+}
+
+.container-collapse .btn-collapse {
+  background-color: white; 
+  color: var(--bs-primary);
+}
+
+.container-collapse:hover button.btn, button.btn-collapse[aria-expanded="true"], 
+button.btn-collapse[aria-expanded="true"] + .btn {
+  background-color: var(--bs-primary);
+  color: var(--bs-primary-emphasis);
+}
+
+#contact-card-1 i {
+  font-size: 15px;
+  min-width: 28px; 
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;  
+}
+
+#striped-banner {
+  background-image: url('../res/stripe.jpg');
+}
+
+#striped-banner a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+.popdown-div {
+  display: none; 
+  width: 25px; 
+  height: 25px; 
+  top: 80%;
+  transform: rotate(45deg);
+}
+
+.ar-1 {
+  aspect-ratio: 1;
+}
+
+/*
+  Media Queries
+*/
+
+@media (min-width: 992px) {
+  .tab-header .btn {
+    background-color: var(--bs-primary-emphasis);
+    color: var(--bs-primary);
+  }
+
+  .tab-header:hover .btn-collapse, .tab-header:focus .btn-collapse {
+    text-decoration: underline; 
+  }
+
+  .btn-collapse[aria-expanded="true"] .popdown-div {
+    display: block; 
+  }
+}
+
+@media (max-width: 991px) {
+  .tab-header {
+    height: 65px;
+  }
+
+  .tab-header button:not(.btn-collapse) {
+    background-color: var(--bs-primary-emphasis);
+    color: var(--bs-primary);
+  }
+
+  #contact-card-tabs .tab-header .btn {
+    font-size: 22px; 
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    margin-top: 88px;
+  }
+
+  .btn-collapse {
+    font-size: 16px; 
+  }
+}

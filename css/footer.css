@@ -1,0 +1,55 @@
+#footer-banner {
+  background-image: url('../res/footer_bg.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+#brand a:hover {
+  text-decoration: underline;
+}
+
+#link .btns {
+  transition: background-color, 1s;
+}
+
+#links .btn:hover {
+  background-color: var(--bs-secondary);
+}
+
+#socials div {
+  transition: filter, 0.5s;
+}
+
+#socials div:hover {
+  filter: brightness(80%);
+}
+
+#socials div:hover i {
+  border-bottom: 2px solid var(--bs-light);
+}
+
+#socials div {
+  min-width: 45px; 
+}
+
+#logos img {
+  max-width: 100%; 
+}
+
+#bottom {
+  background-color: rgba(52, 58, 64, 0.8); 
+}
+
+#bottom a:hover {
+  text-decoration: underline;
+}
+
+/*
+  Media Queries
+*/
+
+@media (max-width: 767px) {
+  #footer-banner {
+    background-image: none;
+  }
+}
